@@ -12,6 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登录页面</title>
     <link rel="stylesheet" href="~/Content/style.css" />
+    <link rel="stylesheet" href="~/Scripts/element/element.css" />
+    <script src="~/Scripts/element/vue.js"></script>
+    <script src="~/Scripts/element/element.js"></script>
 </head>
 <body>
     <div id="box" class="box">
@@ -36,14 +39,30 @@
                 </div>
                 <div class="other-login-wrapper">
                     <div class="other-login-item">
-                        <img src="~/imgs/QQ.png" alt="">
+                        <img src="~/imgs/QQ.png" alt="QQ登录" v-on:click="loginQQ">
                     </div>
                     <div class="other-login-item">
-                        <img src="~/imgs/WeChat.png" alt="">
+                        <img src="~/imgs/WeChat.png" alt="微信登录" v-on:click="loginWeChat">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        const vm = new Vue({
+            el: "#box",
+            data: {
+
+            },
+            methods: {
+                loginQQ: function () {
+                    this.$message('开发中！');
+                },
+                loginWeChat: function () {
+                    this.$message('开发中！');
+                }
+            }
+        })
+    </script>
 </body>
 </html>
