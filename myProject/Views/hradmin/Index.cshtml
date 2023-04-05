@@ -88,15 +88,14 @@
                             type: "post",
                             dataType: "json",
                             success(data) {
-                                var d = eval("(" + data + ")");
-                                if (d.status === true) {
+                                if (data.status === true) {
                                     this.openLoading(false, '');
                                     this.$message.success('登陆成功！');
                                     url_pos = '@Url.Action("Index", "Home")';
                                     window.location.href = url_pos;
                                 } else {
                                     this.openLoading(false, '');
-                                    this.$message.error(d.message);
+                                    this.$message.error(data.message);
                                     return;
                                 }
                             }

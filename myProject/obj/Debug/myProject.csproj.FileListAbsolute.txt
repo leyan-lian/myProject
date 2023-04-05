@@ -170,3 +170,11 @@ D:\lhz\myProject\myProject\obj\Debug\myProject.csproj.CoreCompileInputs.cache
 D:\lhz\myProject\myProject\obj\Debug\myProject.csproj.CopyComplete
 D:\lhz\myProject\myProject\obj\Debug\myProject.dll
 D:\lhz\myProject\myProject\obj\Debug\myProject.pdb
+D:\work\myProject\myProject\bin\EntityFramework.dll
+D:\work\myProject\myProject\bin\EntityFramework.SqlServer.dll
+D:\work\myProject\myProject\bin\MySql.Data.dll
+D:\work\myProject\myProject\bin\MySql.Data.Entity.EF6.dll
+D:\work\myProject\myProject\bin\EntityFramework.xml
+D:\work\myProject\myProject\bin\EntityFramework.SqlServer.xml
+D:\work\myProject\myProject\bin\MySql.Data.xml
+D:\work\myProject\myProject\bin\MySql.Data.Entity.EF6.xml
