@@ -16,7 +16,7 @@ namespace myProject
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "hradmin", action = "Login", id = UrlParameter.Optional }
+                defaults: new { controller = "hradmin", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

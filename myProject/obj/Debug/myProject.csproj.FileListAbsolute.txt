@@ -178,3 +178,11 @@ D:\work\myProject\myProject\bin\EntityFramework.xml
 D:\work\myProject\myProject\bin\EntityFramework.SqlServer.xml
 D:\work\myProject\myProject\bin\MySql.Data.xml
 D:\work\myProject\myProject\bin\MySql.Data.Entity.EF6.xml
+D:\lhz\myProject\myProject\bin\EntityFramework.dll
+D:\lhz\myProject\myProject\bin\EntityFramework.SqlServer.dll
+D:\lhz\myProject\myProject\bin\MySql.Data.dll
+D:\lhz\myProject\myProject\bin\MySql.Data.Entity.EF6.dll
+D:\lhz\myProject\myProject\bin\EntityFramework.xml
+D:\lhz\myProject\myProject\bin\EntityFramework.SqlServer.xml
+D:\lhz\myProject\myProject\bin\MySql.Data.xml
+D:\lhz\myProject\myProject\bin\MySql.Data.Entity.EF6.xml
