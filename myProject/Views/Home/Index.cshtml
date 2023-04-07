@@ -1,5 +1,75 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿
+@{
+    Layout = null;
 }
 
+<!DOCTYPE html>
 
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="~/Content/3dcube/style.css">
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="cube">
+            <div class="card">
+                <a href="#">
+                    <img src="~/imgs/image-1.jpg" style="height:290px;width:290px" onclick="showImg(this)">
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="~/imgs/image-2.jpg" style="height:290px;width:290px" onclick="showImg(this)">
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="~/imgs/image-3.jpg" style="height:290px;width:290px" onclick="showImg(this)">
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="~/imgs/image-3.jpg" style="height:290px;width:290px" onclick="showImg(this)">
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="~/imgs/image-5.jpg" style="height:290px;width:290px" onclick="showImg(this)">
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="~/imgs/image-6.jpg" style="height:290px;width:290px" onclick="showImg(this)">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showImg(obj) {
+            imgSrc = obj.src;
+            var div = document.createElement("div");
+            div.id = "imgDiv";
+            div.style.position = "fixed";
+            div.style.top = "0px";
+            div.style.left = "0px";
+            div.style.width = "100%";
+            div.style.height = "100%";
+            div.style.backgroundColor = "rgba(0,0,0,0.5)";
+            div.style.backgroundImage = "url(" + imgSrc + ")";
+            div.style.backgroundRepeat = "no-repeat";
+            div.style.backgroundSize = "contain";
+            div.style.backgroundPosition = "center center";
+            document.body.appendChild(div);
+
+            //给div元素添加一个onclick事件，删除该元素或者隐藏该元素
+            $("#imgDiv").click(function () {
+                $(this).remove();
+            });
+        }
+    </script>
+</body>
+</html>

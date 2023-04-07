@@ -154,6 +154,7 @@
     <Compile Include="pubClsMod\SessionHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\3dcube\style.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -163,6 +164,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="imgs\image-1.jpg" />
+    <Content Include="imgs\image-2.jpg" />
+    <Content Include="imgs\image-3.jpg" />
+    <Content Include="imgs\image-5.jpg" />
+    <Content Include="imgs\image-6.jpg" />
     <Content Include="imgs\login_bg_phone.png" />
     <Content Include="imgs\login_two.jpg" />
     <Content Include="imgs\QQ.png" />
@@ -198,8 +204,8 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\hradmin\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
