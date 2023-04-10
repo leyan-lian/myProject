@@ -31,7 +31,7 @@
                         <span>密码</span>
                         <input type="password" class="input-item" placeholder="请输入密码" v-model="pwd">
                     </div>
-                    <button class="login-btn" v-on:click="login">登 录</button>
+                    <el-button class="login-btn" v-on:click="login" :loading="isLoading">登 录</el-button>
                 </div>
                 <div class="divider">
                     <span class="line"></span>
@@ -54,7 +54,8 @@
             el: "#box",
             data: {
                 account: "",
-                pwd:""
+                pwd: "",
+                isLoading: false
             },
             methods: {
                 openLoading(is_open, text) {
@@ -83,20 +84,22 @@
                         t.$message.error('密码也没有填写呢！');
                         return;
                     }
-                    t.openLoading(true, '正在登陆，请稍等...');
+
+                    //让按钮处于loading状态
+                    t.isLoading = true;
+
                     $.ajax({
                             url: '@Url.Action("Login", "hradmin")',
                             type: "post",
                             dataType: "json",
                             data: { name: t.account,pwd:t.pwd },
-                            success(data) {
-                                if (data.status === true) {
-                                    t.openLoading(false, '');
+                        success(data) {
+                            t.isLoading = false;
+                                if (data.status === true) {                                    
                                     t.$message.success('登陆成功！');
                                     url_pos = '@Url.Action("Index", "Home")';
                                     window.location.href = url_pos;
                                 } else {
-                                    t.openLoading(false, '');
                                     t.$message.error(data.message);
                                     return;
                                 }
